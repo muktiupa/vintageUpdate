@@ -2,6 +2,9 @@
 import allData from "../DataArry"
 import Button from "../component/Button"
 import SmallCard from "../component/SmallCard"
+import circle1 from "../img/Ellipse 9.png"
+import circle2 from "../img/Ellipse 10.png"
+import circle3 from "../img/Ellipse 14.png"
 export default function homepage() {
 
     return (
@@ -28,16 +31,22 @@ export default function homepage() {
 
                     </div>
                 </div>
-                <div className="w-1/2" >photo</div>
+                <div className="w-1/2 relative bg-slate-700 h-[600px] " >
+
+                <img className="flex justify-center items-center absolute top-0 left-0 "  src={circle3} alt="" />
+                <img  className="flex justify-center items-center absolute top-0 left-0 " src={circle2} alt="" />
+                <img className="flex justify-center items-center absolute top-6 left-0 "  src={circle1} alt="" />
+
+                </div>
 
             </div>
             <div className=" h-[50vh]" >
                 <h2 className="w-1/2 text-5xl font-semibold ">Browse Top Essential Career Courses</h2>
                 <div className="py-3 flex w-1/2 ">
-                {allData.SmallCardData.map((item) =>(
-          <SmallCard icon={item.icon} title={item.title} bg={item.bg}/>
-          ))}
-                        
+                    {allData.SmallCardData.map((item) => (
+                        <SmallCard icon={item.icon} title={item.title} />
+                    ))}
+
                 </div>
 
             </div>
