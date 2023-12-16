@@ -1,0 +1,12 @@
+.smallcard-bg:nth-child(1){
+    background-color: #FA6C9C;
+    
+}
+.smallcard-bg:nth-child(2){
+    background-color: #EE64E4;
+
+}
+.smallcard-bg:nth-child(3){
+    background-color: #EEAF32;
+
+}
