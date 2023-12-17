@@ -2,6 +2,9 @@
 import allData from "../DataArry"
 import Button from "../component/Button"
 import SmallCard from "../component/SmallCard"
+import circle1 from "../img/Ellipse 9.png"
+import circle2 from "../img/Ellipse 10.png"
+import circle3 from "../img/Ellipse 14.png"
 export default function homepage() {
 
     return (
@@ -28,10 +31,17 @@ export default function homepage() {
 
                     </div>
                 </div>
-                <div className="w-1/2" >photo</div>
+                <div className="w-1/2 relative bg-slate-700 h-[600px] " >
+
+                <img className="flex justify-center items-center absolute top-0 left-0 "  src={circle3} alt="" />
+                <img  className="flex justify-center items-center absolute top-0 left-0 " src={circle2} alt="" />
+                <img className="flex justify-center items-center absolute top-6 left-0 "  src={circle1} alt="" />
+
+                </div>
 
             </div>
             <div className=" h-[50vh]" >
+<<<<<<< HEAD
                 <h2 className="w-1/2 text-4xl font-semibold ">Browse Top Essential Career Courses</h2>
                 <div className=" flex justify-between items-center w-full mt-5 box-border flex-wrap ">
                 {allData.SmallCardData.map((item) =>(
@@ -43,6 +53,13 @@ export default function homepage() {
 <ellipse cx="77.5" cy="76" rx="49.5" ry="50" fill="#EE64E4"/>
 <path d="M84.3182 93.642L80.2841 89.6364L88.6932 81.2273H55V75.3182H88.6932L80.2841 66.9091L84.3182 62.9034L99.6875 78.2727L84.3182 93.642Z" fill="white"/>
 </svg>
+=======
+                <h2 className="w-1/2 text-5xl font-semibold ">Browse Top Essential Career Courses</h2>
+                <div className="py-3 flex w-1/2 ">
+                    {allData.SmallCardData.map((item) => (
+                        <SmallCard icon={item.icon} title={item.title} />
+                    ))}
+>>>>>>> 8cc078de1641a6ba43bf51a251922b5040d04577
 
                 </div>
 

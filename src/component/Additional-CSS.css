@@ -1,0 +1,13 @@
+.sm-card-bg:first-child{
+    background: #FA6C9C;
+    margin: 0;
+}
+.sm-card-bg:nth-child(2){
+    background: #EE64E4;
+
+    
+}
+.sm-card-bg:nth-child(3){
+    background: #EEAF32;
+
+}
